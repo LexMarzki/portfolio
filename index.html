@@ -692,6 +692,320 @@
         }
       }
     </style>
+    <!--
+  ============================================================
+  MARZKI.MY — COMPLETE SCHEMA MARKUP (JSON-LD)
+  ============================================================
+  INSTRUCTIONS:
+  Paste ALL of the <script> blocks below inside the <head>
+  section of your HTML, before the closing </head> tag.
+
+  You can validate these at: https://validator.schema.org/
+  ============================================================
+-->
+
+    <!-- 1. ORGANIZATION + LOCAL BUSINESS
+     Tells Google who you are, where you are, and how to contact you.
+     This is the most important block. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+        "@id": "https://www.marzki.my/#organization",
+        "name": "Marzki",
+        "legalName": "Marzki",
+        "url": "https://www.marzki.my/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.marzki.my/assets/logo.png",
+          "width": 200,
+          "height": 60
+        },
+        "image": "https://www.marzki.my/assets/logo.png",
+        "description": "Marzki is an independent IT consulting firm in Malaysia and Australia delivering scalable software, system integration and application modernization for growing businesses.",
+        "foundingDate": "2014",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kuala Lumpur",
+          "addressRegion": "Selangor",
+          "addressCountry": "MY"
+        },
+        "areaServed": [
+          {
+            "@type": "Country",
+            "name": "Malaysia"
+          },
+          {
+            "@type": "Country",
+            "name": "Australia"
+          }
+        ],
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "marzkinet@gmail.com",
+            "availableLanguage": ["English", "Malay"]
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "telephone": "+601157004035",
+            "contactOption": "TollFree",
+            "availableLanguage": ["English", "Malay"]
+          }
+        ],
+        "sameAs": [],
+        "knowsAbout": [
+          "IT Consulting",
+          "Software Development",
+          "System Integration",
+          "Application Modernization",
+          "Web Application Development",
+          "API Development",
+          "Enterprise Software",
+          "Cloud Computing"
+        ],
+        "slogan": "Independent IT Consulting Firm — Malaysia & Australia",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "IT Consulting & Software Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "IT Consulting & Architecture"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Custom Software Development"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "System Integration"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Application Modernization"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- 2. WEBSITE
+     Enables Google's Sitelinks Search Box and establishes
+     the canonical URL of the site. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://www.marzki.my/#website",
+        "url": "https://www.marzki.my/",
+        "name": "Marzki — IT Consulting & Software Solutions",
+        "description": "Marzki is a boutique IT consulting firm helping organizations design, build and modernize the systems that run their operations.",
+        "publisher": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "inLanguage": "en-MY"
+      }
+    </script>
+
+    <!-- 3. WEB PAGE
+     Describes the homepage specifically. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://www.marzki.my/#webpage",
+        "url": "https://www.marzki.my/",
+        "name": "IT Consulting & Custom Software Development Malaysia | Marzki",
+        "isPartOf": {
+          "@id": "https://www.marzki.my/#website"
+        },
+        "about": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "description": "Marzki is an independent IT consulting firm in Malaysia & Australia delivering scalable software, system integration and application modernization for growing businesses.",
+        "inLanguage": "en-MY",
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": "https://www.marzki.my/"
+        }
+      }
+    </script>
+
+    <!-- 4. PERSON — FOUNDER
+     Establishes Malek Faesal as the authoritative expert
+     behind the firm (supports Google's E-E-A-T signals). -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://www.marzki.my/#malek-faesal",
+        "name": "Malek Faesal",
+        "jobTitle": "Founder & Principal Consultant",
+        "worksFor": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "url": "https://www.marzki.my/#company",
+        "knowsAbout": [
+          "Software Architecture",
+          "Full-Stack Development",
+          "Enterprise System Integration",
+          "IT Consulting",
+          "Application Modernization"
+        ],
+        "description": "Founder and principal consultant at Marzki. Brings deep hands-on experience in software architecture, full-stack development and enterprise system integration."
+      }
+    </script>
+
+    <!-- 5. SERVICES (4 individual service blocks)
+     Each service gets its own schema entry so Google can
+     surface them in relevant searches. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.marzki.my/#service-consulting",
+        "name": "IT Consulting & Architecture",
+        "description": "Advisory and technical architecture work to help leadership teams make confident decisions on platforms, build-vs-buy and long-term technology direction. Delivers clarity, reduced risk, and sound technology investment.",
+        "provider": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Malaysia" },
+          { "@type": "Country", "name": "Australia" }
+        ],
+        "serviceType": "IT Consulting",
+        "category": "Technology Consulting",
+        "url": "https://www.marzki.my/#services"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.marzki.my/#service-software",
+        "name": "Custom Software Development",
+        "description": "Design and engineering of tailored web applications and internal platforms — built to fit specific business processes. Delivers efficiency, automation, and competitive edge for businesses in Malaysia and Australia.",
+        "provider": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Malaysia" },
+          { "@type": "Country", "name": "Australia" }
+        ],
+        "serviceType": "Custom Software Development",
+        "category": "Software Engineering",
+        "url": "https://www.marzki.my/#services"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.marzki.my/#service-integration",
+        "name": "System Integration",
+        "description": "Connecting fragmented tools, third-party services and internal databases through robust APIs and data pipelines so information flows reliably across the organization.",
+        "provider": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Malaysia" },
+          { "@type": "Country", "name": "Australia" }
+        ],
+        "serviceType": "System Integration",
+        "category": "Enterprise Integration",
+        "url": "https://www.marzki.my/#services"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://www.marzki.my/#service-modernization",
+        "name": "Application Modernization",
+        "description": "Refactoring, replatforming and incremental rebuilds of legacy systems — preserving institutional knowledge while improving performance, security and maintainability.",
+        "provider": {
+          "@id": "https://www.marzki.my/#organization"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Malaysia" },
+          { "@type": "Country", "name": "Australia" }
+        ],
+        "serviceType": "Application Modernization",
+        "category": "Software Modernization",
+        "url": "https://www.marzki.my/#services"
+      }
+    </script>
+
+    <!-- 6. FAQ
+     Adds a FAQ rich result to your Google listing, giving you
+     extra real estate in search results. Replace with your own
+     real Q&As, or ask Claude to write these for you. -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What IT consulting services does Marzki offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Marzki offers four core services: IT Consulting & Architecture, Custom Software Development, System Integration, and Application Modernization. Every engagement is led directly by senior practitioners with 10+ years of engineering experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Marzki based and what areas do you serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Marzki is an independent IT consulting firm based in Malaysia with clients in Australia. We serve businesses globally, with a particular focus on small and mid-sized organizations in Malaysia and the Asia-Pacific region."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What industries does Marzki work with?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Marzki has delivered projects across finance, logistics, retail and professional services industries. We specialize in web applications, integrated business systems, and modernization initiatives for growing businesses."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I engage Marzki for a project?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can contact us via the website at marzki.my or reach out on WhatsApp. We offer flexible engagement models including project-based, retainer, or advisory arrangements. We respond to all inquiries within one business day."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes Marzki different from a large IT agency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Marzki is a boutique firm — intentionally lean. You work directly with senior practitioners, with no junior handoffs or account-management layers. This means faster decisions, clearer communication, and comparable senior-level capability at a fraction of the cost of a large agency."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
